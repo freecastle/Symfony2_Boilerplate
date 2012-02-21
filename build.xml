@@ -141,10 +141,17 @@
   </exec>
  </target>
 
- <target name="vendors"
+ <target name="vendors" depends="config"
          description="Install vendors">
   <exec executable="bin/vendors" failonerror="true">
    <arg value="install" />
+  </exec>
+ </target>
+
+ <target name="config"
+         description="Create parameters.ini">
+  <exec executable="cp">
+   <arg line="-n ${basedir}/app/config/parameters.ini.dist ${basedir}/app/config/parameters.ini" />
   </exec>
  </target>
 </project>
