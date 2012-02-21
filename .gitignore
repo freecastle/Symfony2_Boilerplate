@@ -11,6 +11,11 @@ web/bundles/*
 # Configuration files
 app/config/parameters.ini
 
+# Test and build files
+app/phpunit.xml
+build/*
+cache.properties
+
 # Numerous always-ignore extensions
 *.diff
 *.err
