@@ -2,6 +2,6 @@ language: php
 
 php: 5.3
 
-before_script:
-    - cp -n app/config/parameters.ini.dist app/config/parameters.ini
-    - php bin/vendors install
+before_script: ant vendors
+
+script: phpunit --colors -c app
