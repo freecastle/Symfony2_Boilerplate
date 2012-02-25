@@ -4,4 +4,4 @@ php: 5.3
 
 before_script:
     - cp -n app/config/parameters.ini.dist app/config/parameters.ini
-    - php bin/vendors.php install
+    - php bin/vendors install
