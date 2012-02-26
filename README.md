@@ -9,6 +9,3 @@ comes with a .gitignore which combines [GitHub's Symfony2 .gitignore](https://gi
 There are still some things to do: Integration of [Capifony](http://capifony.org/) for an easy deployment, [Behat](http://behat.org/) for Behavior Driven
 Development (BDD) and maybe some more default bundles like [DoctrineMigrationsBundle](http://symfony.com/doc/2.0/bundles/DoctrineMigrationsBundle/index.html) or
 [DoctrineFixturesBundle](http://symfony.com/doc/2.0/bundles/DoctrineFixturesBundle/index.html).
-
-
-
