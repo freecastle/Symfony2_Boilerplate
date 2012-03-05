@@ -9,7 +9,8 @@ php:
 
 # install the vendors first by using the Ant script
 before_script:
-  - ant vendors
+  - wget -nc http://getcomposer.org/composer.phar
+  - php composer.phar install
 
 # specify where to find the PHPUnit configuration files
 script: phpunit --colors -c app

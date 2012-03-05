@@ -143,7 +143,12 @@
 
  <target name="vendors" depends="config"
          description="Install vendors">
-  <exec executable="bin/vendors" failonerror="true">
+  <exec executable="wget" failonerror="true">
+   <arg value="-nc" />
+   <arg value="http://getcomposer.org/composer.phar" />
+  </exec>
+  <exec executable="php" failonerror="true">
+   <arg value="composer.phar" />
    <arg value="install" />
   </exec>
  </target>

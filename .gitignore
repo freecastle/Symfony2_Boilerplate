@@ -10,12 +10,14 @@ web/bundles/*
 
 # Configuration files
 app/config/parameters.ini
+app/config/parameters.yml
 
 # Test and build files
 app/config/deploy.rb
 app/phpunit.xml
 build/*
 cache.properties
+composer.phar
 
 # Numerous always-ignore extensions
 *.diff
