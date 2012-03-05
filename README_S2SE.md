@@ -1,12 +1,10 @@
-Symfony2 Boilerplate
-====================
+Symfony Standard Edition
+========================
 
-This boilerplate is the most recent version of [Symfony Standard Edition](http://symfony.com/download), adds the Ant build script (thanks to
-[mbadolato's Gist](https://gist.github.com/1648894)) of Sebastian Bergmann's [Template for Jenkins Jobs for PHP Projects](http://jenkins-php.org/) for the [Jenkins CI](http://jenkins-ci.org/) and
-comes with a .gitignore which combines [GitHub's Symfony2 .gitignore](https://github.com/github/gitignore/blob/master/Symfony2.gitignore) with the one of [HTML5 Boilerplate]
-(https://github.com/h5bp/html5-boilerplate/blob/master/.gitignore).
+Welcome to the Symfony Standard Edition - a fully-functional Symfony2
+application that you can use as the skeleton for your new app. If you want
+to learn more about the features included, see the "What's Inside?" section.
 
-<<<<<<< HEAD
 This document contains information on how to download and start using Symfony.
 For a more detailed explanation, see the
 [Installation chapter](http://symfony.com/doc/current/book/installation.html)
@@ -147,8 +145,3 @@ The Symfony Standard Edition comes pre-configured with the following bundles:
 * **AcmeDemoBundle** (in dev/test env) - A demo bundle with some example code
 
 Enjoy!
-=======
-There are still some things to do: Integration of [Capifony](http://capifony.org/) for an easy deployment, [Behat](http://behat.org/) for Behavior Driven
-Development (BDD) and maybe some more default bundles like [DoctrineMigrationsBundle](http://symfony.com/doc/2.0/bundles/DoctrineMigrationsBundle/index.html) or
-[DoctrineFixturesBundle](http://symfony.com/doc/2.0/bundles/DoctrineFixturesBundle/index.html).
->>>>>>> master
