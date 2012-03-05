@@ -1,0 +1,15 @@
+# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+
+# list any PHP version you want to test against
+php:
+  # using major version aliases
+  - 5.3
+  - 5.4
+
+# install the vendors first by using the Ant script
+before_script:
+  - ant vendors
+
+# specify where to find the PHPUnit configuration files
+script: phpunit --colors -c app
