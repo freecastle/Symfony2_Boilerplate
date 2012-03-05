@@ -9,6 +9,7 @@ php:
 
 # install the vendors first by using the Ant script
 before_script:
+  - cp -n app/config/parameters.yml.dist app/config/parameters.yml
   - wget -nc http://getcomposer.org/composer.phar
   - php composer.phar install
 

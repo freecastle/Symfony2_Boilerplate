@@ -154,9 +154,9 @@
  </target>
 
  <target name="config"
-         description="Create parameters.ini">
+         description="Create parameters.yml">
   <exec executable="cp">
-   <arg line="-n ${basedir}/app/config/parameters.ini.dist ${basedir}/app/config/parameters.ini" />
+   <arg line="-n ${basedir}/app/config/parameters.yml.dist ${basedir}/app/config/parameters.yml" />
   </exec>
  </target>
 </project>
