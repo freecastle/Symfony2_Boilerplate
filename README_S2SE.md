@@ -1,10 +1,6 @@
 Symfony Standard Edition
 ========================
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony2
-application that you can use as the skeleton for your new app. If you want
-to learn more about the features included, see the "What's Inside?" section.
-
 This document contains information on how to download and start using Symfony.
 For a more detailed explanation, see the
 [Installation chapter](http://symfony.com/doc/current/book/installation.html)
@@ -42,27 +38,24 @@ Run the following commands:
 Once you've downloaded the standard edition, installation is easy, and basically
 involves making sure your system is ready for Symfony.
 
-### a) Check your System Configuration
+### a) Install the Vendor Libraries
 
-Before you begin, make sure that your local system is properly configured
+If you downloaded the archive "without vendors" or installed via git, then
+you need to download all of the necessary vendor libraries. If you're not
+sure if you need to do this, check to see if you have a ``vendor/`` directory.
+If you don't, or if that directory is empty, download composer following the
+instructions on http://getcomposer.org/ and then run the following:
+
+    php composer.phar install
+
+### b) Check your System Configuration
+
+Now make sure that your local system is properly configured
 for Symfony. To do this, execute the following:
 
     php app/check.php
 
 If you get any warnings or recommendations, fix these now before moving on.
-
-### b) Install the Vendor Libraries
-
-If you downloaded the archive "without vendors" or installed via git, then
-you need to download all of the necessary vendor libraries. If you're not
-sure if you need to do this, check to see if you have a ``vendor/`` directory.
-If you don't, or if that directory is empty, run the following:
-
-    php bin/vendors install
-
-Note that you **must** have git installed and be able to execute the `git`
-command to execute this script. If you don't have git available, either install
-it or download Symfony with the vendor libraries already included.
 
 ### c) Access the Application via the Browser
 
@@ -114,12 +107,12 @@ playing with it, you can remove it by following these steps:
 * delete the ``src/Acme`` directory;
 * remove the routing entries referencing AcmeBundle in ``app/config/routing_dev.yml``;
 * remove the AcmeBundle from the registered bundles in ``app/AppKernel.php``;
-
+* remove the ``web/bundles/acmedemo`` directory.
 
 What's inside?
 ---------------
 The Symfony Standard Edition comes pre-configured with the following bundles:
-	
+
 * **FrameworkBundle** - The core Symfony framework bundle
 * **SensioFrameworkExtraBundle** - Adds several enhancements, including template
   and routing annotation capability ([documentation](http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html))
