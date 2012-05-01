@@ -1,6 +1,10 @@
 Symfony Standard Edition
 ========================
 
+Welcome to the Symfony Standard Edition - a fully-functional Symfony2
+application that you can use as the skeleton for your new app. If you want
+to learn more about the features included, see the "What's Inside?" section.
+
 This document contains information on how to download and start using Symfony.
 For a more detailed explanation, see the
 [Installation chapter](http://symfony.com/doc/current/book/installation.html)
@@ -107,10 +111,14 @@ playing with it, you can remove it by following these steps:
 * delete the ``src/Acme`` directory;
 * remove the routing entries referencing AcmeBundle in ``app/config/routing_dev.yml``;
 * remove the AcmeBundle from the registered bundles in ``app/AppKernel.php``;
-* remove the ``web/bundles/acmedemo`` directory.
+* remove the ``web/bundles/acmedemo`` directory;
+* remove the inclusion of the security configuration in
+  ``app/config/config.yml`` (remove the ``- { resource: security.yml }`` line)
+  or tweak the default configuration to fit your needs.
 
 What's inside?
 ---------------
+
 The Symfony Standard Edition comes pre-configured with the following bundles:
 
 * **FrameworkBundle** - The core Symfony framework bundle
@@ -129,8 +137,9 @@ The Symfony Standard Edition comes pre-configured with the following bundles:
 * **AsseticBundle** - Adds support for Assetic, an asset processing library
   ([documentation](http://symfony.com/doc/2.0/cookbook/assetic/asset_management.html))
 * **JMSSecurityExtraBundle** - Allows security to be added via annotations
-  ([documentation](http://symfony.com/doc/current/bundles/JMSSecurityExtraBundle/index.html))
+  ([documentation](http://jmsyst.com/bundles/JMSSecurityExtraBundle/1.1))
 * **JMSDiExtraBundle** - Adds more powerful dependency injection features 
+  ([documentation](http://jmsyst.com/bundles/JMSDiExtraBundle/1.0))
 * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
   the web debug toolbar
 * **SensioDistributionBundle** (in dev/test env) - Adds functionality for configuring
