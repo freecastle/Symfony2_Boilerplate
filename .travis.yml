@@ -6,6 +6,7 @@ php:
   # using major version aliases
   - 5.3
   - 5.4
+  - 5.5
 
 # install the vendors first by using the Ant script
 before_script:
